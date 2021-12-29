@@ -2,7 +2,7 @@
     background-image: url("..//img/index_img/catolog.jpg");
     background-repeat: no-repeat;
     background-size: 1246px 800px;
-    background-position: top 30px left calc(62%)
+    background-position: top 30px left calc(50% + 320px)
 }
 
 .catalog .container{
@@ -33,6 +33,7 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
     border-radius: 0px 40px 0px 0px;
+    border-top-right-radius: 24px;
 
     &:nth-child(1){
         margin-right: 30px;
@@ -50,6 +51,8 @@
 }
 
 .catalog__img{
+    max-width: 100%;
+    height: auto;
     padding: 5px;
 }
 
@@ -121,6 +124,10 @@
 }
 
 @media only screen and (max-width:800px){
+    .catalog .container{
+        margin-bottom: 60px;
+    }
+
     .catalog__list{
         flex-direction: column;
     }
@@ -157,15 +164,6 @@
             max-width: 360px;
         }
     }
-    .catalog__img{
-        &--th{
-            width: 360px;
-            height: avto;
-            border-top-right-radius:36px;
-            border-bottom-left-radius:36px;
-
-        }
-    }
 }
 
 @media only screen and (max-width:400px){
@@ -177,6 +175,7 @@
 
     .catalog__item{
         max-width: 320px;
+        padding-bottom: 32px;
 
         &:nth-child(3){
             max-width: 320px;
@@ -187,11 +186,22 @@
         padding-left: 20px;
         padding-right: 24px;
     }
-    
-    .catalog__img{
-        width: 320px;
-        border-top-right-radius:24px ;
-        border-bottom-left-radius:24px ;
+
+    .catalog__heading{
+        font-size: 24px;
+        line-height: 30px
+    }
+
+    .catalog__text{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .catalog__link{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
     }
 }
 
@@ -205,26 +215,12 @@
         }
     }   
 
-    .catalog__img{
-        max-width: 290px;
-    }
-
     .catalog__link{
         max-width: 255px;
     }
 }
 
 @media only screen and (max-width:328px){
-    .catalog__img{
-        width: 280px;
-        border-top-right-radius:24px ;
-        border-bottom-left-radius:24px ;
-        &--th{
-            border-top-right-radius:24px ;
-            border-bottom-left-radius:24px ;
-        }
-    }
-
     .catalog__item__box{
         padding-right: 0;
     }

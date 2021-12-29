@@ -267,3 +267,20 @@
         }
     }
 }
+
+@media only screen and (max-width:340px){
+    .choose__title{
+        font-size: 20px;
+            line-height: 30px;
+    }
+
+    .choose__list__title{
+        font-size:15px;
+        line-height: 24px;
+    }
+
+    .choose__list__text{
+        font-size: 15px;
+        line-height: 21px;
+    }
+}

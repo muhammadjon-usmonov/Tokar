@@ -9,6 +9,137 @@
 </head>
 <body>
     
+     <header class="header">
+      <div class="container">
+        <div class="header__top">
+            <div class="header__top--left">
+                <p class="menu">Меню</p>
+                <button class="hambergur">
+                    <img src="./img/universal_img/меню.svg" width="25" height="20" alt="" class="hambergur__image">
+                </button>
+                <button class="hambergur--second">
+                    <img 
+                    class="hambergur__close" 
+                    src="./img/universal_img/закрыть.svg" 
+                    alt="close icon image"
+                    width="18"
+                    height="18">
+                </button>
+                
+          <a class="header-top__logo" href="index.html">
+            <img
+              class="header-top__image"
+              src="./img/universal_img/лого.svg"
+              alt="header logo image"
+              width="251"
+              height="33"
+            />
+          </a>
+          <a class="phone__link" href="tel:993620323">
+              <img 
+              class="phone__image" 
+              src="./img/universal_img/Phone.svg" 
+              alt="phone image"
+              width="22"
+              height="22">
+          </a>
+          <p class="header-top__text">
+            TokarCompany - производственно -строительная компания
+          </p>
+        </div>
+        <div class="header__top--right">
+          <div class="header-top__social">
+            <p class="header-top-social__text">Связаться напрямую:</p>
+            <ul class="header-top-social__list">
+              <li class="header-top-social__item">
+                <a class="header-top-social__link" href="#">
+                  <img
+                    class="header-top-social__image"
+                    src="./img/universal_img/Telegram.svg"
+                    alt="facebook image"
+                    width="26"
+                    height="26"
+                  />
+                </a>
+              </li>
+              <li class="header-top-social__item">
+                <a class="header-top-social__link" href="#">
+                  <img
+                    class="header-top-social__image"
+                    src="./img/universal_img/WhatsApp.svg"
+                    alt="WhatsApp image"
+                    width="26"
+                    height="26"
+                  />
+                </a>
+              </li>
+              <li class="header-top-social__item">
+                <a class="header-top-social__link" href="#">
+                  <img
+                    class="header-top-social__image"
+                    src="./img/universal_img/вайбер.svg"
+                    alt="vayber image"
+                    width="26"
+                    height="26"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-top__phone">
+            <p class="header-top__number">+3 80 (67) 175 56 30</p>
+            <time class="header-top__time">с 09:00 до 18:00 (пн-вс)</time>
+          </div>
+          <div class="header-top__rigt-links">
+            <a href="" class="header-top__link">Заказать звонок</a>
+            <p class="header-top__right-links__text">Бесплатно по Украине</p>
+          </div>
+          <div class="header-top__lang">
+            <img
+              class="header-top__flag"
+              src="./img/universal_img/RU.svg"
+              alt="russia flag"
+              width="21"
+              height="15"
+            />
+            <img
+              class="header-top__vector"
+              src="./img/universal_img/Vector_down.svg"
+              alt="vector image"
+              width="6"
+              height="3"
+            />
+          </div>
+        </div>
+    </div>
+        <div class="header-bottom">
+          <ul class="header-bottom__list--first">
+            <li class="header-bottom__item--first">
+              <a class="header-bottm__link--first" href="#">Жилое</a>
+            </li>
+            <li class="header-bottom__item--first">
+              <a class="header-bottm__link--first" href="#">Коммерческое</a>
+            </li>
+            <li class="header-bottom__item--first">
+              <a class="header-bottm__link--first" href="#">Садовое</a>
+            </li>
+          </ul>
+
+          <ul class="header-bottom__list--second">
+            <li class="header-bottom__item--second">
+              <a class="header-bottm__link--second" href="#">Жилое</a>
+            </li>
+            <li class="header-bottom__item--second">
+              <a class="header-bottm__link--second" href="#">Коммерческое</a>
+            </li>
+            <li class="header-bottom__item--second">
+              <a class="header-bottm__link--second" href="#">Садовое</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
 
 
 
@@ -41,8 +172,7 @@
                 <img class="hero__img" src="./img/index_img/hero-img.jpg" alt="популярные дома слайдер"
                 width="615"
                 height="505" 
-                srcset="./img/index_img/hero-img.jpg 1x, ./img/index_img/hero-img@2x.jpg 2x">
-
+                >
             </div>
         </section>  
 
@@ -195,11 +325,11 @@
 
                     <img class="material__img" src="./img/index_img/material.jpg" alt="" width="1170" height="520">
 
-                    <div class="material__links hero__links ">
-                        <a class="hero__links__link" href="#">
+                    <div class="material__links ">
+                        <a class="hero__links__link material__links--st" href="#">
                             Перейти в каталог домов
                         </a>
-                        <a class="hero__links__link--arrow" href="#">
+                        <a class="hero__links__link--arrow material__links--nd" href="#">
                             Каталог бань
                         </a>
                     </div>
@@ -207,19 +337,31 @@
         </section>
 
 
-        <section class="info">
+         <section class="info">
             <div class="container">
                 <h2 class="info__title">
                     О компании TokarMebel
                 </h2>
+               <div class="info__image">
+
+                <img class="info__img" src="./img/index_img/info-bg.jpg" alt="">
+                <span class="info__person"></span>
+                <span class="info__play-text">
+                    Посмотреть короткое видео о компании (2:42 мин)
+                </span>
                 <div class="info__box">
+                    <span class="info__box__left"></span>
+                  <div class="info__box__right">
                     <h2 class="info__box__title"> 
                         Точилов Александр Николаевич
                     </h2>
                     <p class="info__box__text">
                         Цитата о компании, пару слов от самого лица компании. Цитата о компании, пару слов от самого лица компании. 
                     </p>
+                  </div>
                 </div>
+               </div> 
+
                 <ul class="info__list">
                     <li class="info__item">
                         <span class="info__item__count">
@@ -259,13 +401,13 @@
                     </li>
                 </ul>
 
-                <a class="info__link" href="#">
+                <a class="info__link  hero__links__link href="#">
                     Подробнее о компании
                 </a>
             </div>
         </section>
 
-            <!-- building -->
+      <!-- ?  building -->
 
         <section class="building">
             <div class="container">
@@ -275,7 +417,9 @@
 
                 <ul class="building__list">
                     <li class="building__item">
-                        <img src="" alt="">
+                        <img class="building__image" src="./img/index_img/building.jpg" alt="building image type"
+                        width="360" height="280"
+                        >
                         <h3 class="building__heading">
                             Жилые строения
                         </h3>
@@ -295,7 +439,9 @@
                        </ul>
                     </li>
                     <li class="building__item">
-                        <img src="" alt="">
+                        <img class="building__image" src="./img/index_img/building2.jpg" alt="building image type"
+                        width="360" height="280"
+                        >
                         <h3 class="building__heading">
                             Коммерческие
                         </h3>
@@ -318,7 +464,9 @@
                        </ul>
                     </li>
                     <li class="building__item">
-                        <img src="" alt="">
+                        <img class="building__image" src="./img/index_img/building3.jpg" alt="building image type"
+                        width="360" height="280"
+                        >
                         <h3 class="building__heading">
                             Садовые и хоз
                         </h3>
@@ -354,15 +502,18 @@
         </section>
 
 
-        <!-- <section class="articles">
+        <section class="articles">
             <div class="container">
+               <div class="articles__heading">
                 <h2 class="articles__title">
                     Последние статьи
                 </h2>
+                <span class="articles__strel articles__strel--top">1/5</span>
+               </div>
 
                 <ul class="articles__list">
                     <li class="articles__item">
-                        <img src="" alt="">
+                        <img class="articles__img" src="./img/index_img/fot1.jpg" alt="build immage" width="370" height="260">
                         <p class="articles__text">
                             Готовый загородный дом или самостоятельное строительство?
                         </p>
@@ -371,7 +522,7 @@
                         </p>
                     </li>
                     <li class="articles__item">
-                        <img src="" alt="">
+                        <img class="articles__img" src="./img/index_img/fot2.jpg" alt="build image" width="370" height="260">
                         <p class="articles__text">
                             Авторские проекты домов – почему эксклюзив выгоднее
                         </p>
@@ -380,7 +531,7 @@
                         </p>
                     </li>
                     <li class="articles__item">
-                        <img src="" alt="">
+                        <img class="articles__img" src="./img/index_img/fot3.jpg" alt="build image" width="370" height="260">
                         <p class="articles__text">
                             Красивые дома: 100+ фото лучших проектов
                         </p>
@@ -389,8 +540,28 @@
                         </p>
                     </li>
                 </ul>
+                <span class="articles__strel articles__strel--bottom">1/5</span>
+
             </div>
-        </section> -->
+        </section>  
+
+
+        <section class="seo">
+            <div class="container">
+                <div class="seo__box">
+                    <h2 class="seo__title">
+                        Заголовок текста для СЕО
+                    </h2>
+                    <p class="seo__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum posuere urna nec. Tincidunt eget nullam non nisi est sit amet facilisis magna. Faucibus vitae aliquet nec ullamcorper sit amet risus. 
+                        <img class="seo__mobilniy-img" src="./img/index_img/seo.jpg" alt="" width="570" height="247">
+                        Aliquet nec ullamcorper sit amet risus nullam. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Commodo viverra maecenas accumsan lacus vel facilisis. <br><br>
+                        Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Enim facilisis gravida neque convallis a.
+                    </p>
+                </div>
+                <img class="seo__image" src="./img/index_img/seo.jpg" alt="Заголовок текста для СЕО" width="570" height="470">
+            </div>
+        </section>
     </main>
 </body>
 </html>
