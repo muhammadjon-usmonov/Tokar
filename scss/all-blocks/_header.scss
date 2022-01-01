@@ -302,6 +302,7 @@
   }
 
   .header--active .header-bottom {
+    background-color: #FFFBF6;
     position: fixed;
     top: 0;
     right: 0;
@@ -311,6 +312,7 @@
     height: 100%;
     display: block;
     padding-top: 88px;
+    // z-index: 200000;
   }
 
   .header--active .header-bottom__list--first {
