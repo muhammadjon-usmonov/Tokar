@@ -45,17 +45,7 @@
 }
 
 .hero__links__link{
-    max-width: 280px;
-    width: 100%;
-    padding: 23px 42px;
-    text-align: center;
-    background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
-    box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
-    color: #ffffff;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 16px;
+    @include button;
 }
 
 .hero__links__link--arrow{

@@ -1,5 +1,13 @@
+.info{
+    background-image: url("..//img/index_img/baground.png") , url("..//..//img/index_img/baground-top.png");
+    background-repeat: no-repeat , no-repeat ;
+    background-position: left calc(39%) bottom 0, right calc(31%) top 0;
+    background-size: 790px 594px;
+}
+
+
 .info .container{
-    margin-bottom: 145px;
+    padding-bottom: 145px;
     text-align: center;
 }
 
@@ -161,6 +169,19 @@
     text-align: center;
 }
 
+@media only screen and (max-width:1470px){
+    .info{
+        background-size: 600px 400px, 300px 200px;
+        background-position: left 0 bottom 0 , right 0 top 0;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .info{
+        background-image: none;
+    }
+}
+
 @media only screen and (max-width:855px){
     .info .container{
         text-align: center;
@@ -228,6 +249,9 @@
 }
 
 @media only screen and (max-width:700px){
+    .info{
+        background-image: none;
+    }
     .info__title{
         font-weight: 800;
         font-size: 27px;
@@ -393,6 +417,7 @@
 
 @media only screen and (max-width:380px){
     .info__img{
+        border-top-right-radius: 24px;
         height: 200px;
     }
 
