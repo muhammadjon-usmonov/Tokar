@@ -29,6 +29,8 @@
 }
 
 .header-top__image {
+  max-width: 100%;
+  height: auto;
   margin-right: 30px;
   flex-shrink: 0;
 }
@@ -365,5 +367,18 @@
         border-bottom: none;
     }
  } 
+}
 
+@media only screen and (max-width:390px){
+  .header-top__image{
+    max-width: 200px;
+    height: 28px;
+  }
+}
+
+@media only screen and (max-width:330px){
+  .header-top__image{
+    max-width: 147px;
+    height: auto;
+  }
 }

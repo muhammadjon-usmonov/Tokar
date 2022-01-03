@@ -1,0 +1,256 @@
+.variant .container{
+    margin-bottom: 145px;
+    position: relative;
+    z-index: 1;
+}
+
+.variant__imgs{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+}
+
+.variant__basic{
+    max-width: 100%;
+    height: auto;
+    // margin-right: 30px;
+}
+
+.variant__list{
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.variant__item{
+    &+&{
+        margin-top: 12px;
+    }
+    &:nth-child(4){
+        display: none;
+    }
+}
+
+.variant__item__img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.variant__form{
+    position: absolute;
+    bottom: calc(-85%);
+    right:calc(2%);
+    transform: translatex(0%);
+}
+
+.variant__form__box{
+    max-width: 370px;
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 8px;
+    &+&{
+        margin-top: 30px;
+    }
+}
+
+.variant__form__text{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.variant__form--link{
+    color: #F39C32;
+}
+
+.variant__form--yellow{
+    @include button;
+    max-width: 290px;
+}
+
+
+.variant__form__form{
+    position: relative;
+    z-index: 10;
+}
+
+.variant__form__input{
+    max-width: 280px;
+    padding-right: 60px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    border: 1px solid #E7D8C7;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-bottom: 20px;
+}
+
+.variant__form__flag{
+    position:absolute;
+    z-index: 1000;
+    top: calc(10%);
+    left: calc(6%);
+    &::before{
+        content: "";
+        width: 29px;
+        height: 31px;
+        display: inline-block;
+        background-image: url("..//img/universal_img/cases/flag.svg");
+        background-repeat: no-repeat;
+        background-position: left 0 top center;
+        background-size: 29px 31px;
+        vertical-align: middle;
+    }
+}
+
+.variant__form-button{
+    margin-bottom: 28px;
+}
+
+.variant__form--text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;    
+}
+
+@media only screen and (max-width:930px){
+    .variant__imgs{
+        column-gap: 10px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .variant__basic{
+        height: 420px;
+        border-top-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .variant__imgs{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .variant__basic{
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .variant__list{
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .variant__item{
+        &+&{
+            margin-top: 0;
+            margin-left: 15px;
+        }
+        &:nth-child(4){
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width:1160px){
+    .variant__form{
+        bottom: calc(-95%);
+    }
+}
+
+@media only screen and (max-width:1110px){
+    .variant__form__box{
+        max-width: 300px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .variant__form--yellow{
+        max-width: 200px;
+    }
+
+    .variant__form__input{
+        max-width: 200px;
+        padding-right: 10px;
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .variant__form{
+        top: calc(90%);
+    }
+
+    .variant__form__box{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        max-width: 200px;
+    }
+
+    .variant__form__text{
+        font-size:18px;
+    }
+
+    .variant__form--yellow{
+        max-width: 160px;
+    }
+
+    .variant__form__input{
+        max-width: 160px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .variant .container{
+        margin-bottom: 60px;
+    }
+
+    .variant__form{
+        position: static;
+        margin: 0 auto;
+    }
+
+    .variant__form__box{
+        margin: 0 auto;
+        max-width: 350px;
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+
+    .variant__form--yellow{
+        max-width: 100%;
+    }
+
+    .variant__form__input{
+        max-width: 270px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .variant__form__box{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 35px;
+        padding-top: 30px;
+    }
+
+    .variant__form__text{
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
